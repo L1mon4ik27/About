@@ -1,51 +1,62 @@
 :root {
---card-bg-color: #121212;
---text-color: #ffffff;
---link-color:#6360ff;
+    --bg-color: #000000;
+    --card-bg-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #6360ff;
+    --card-radius: 10px;
 }
 
-body{
-    background-color: black;
+body {
+    margin: 0;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-}
-
-h1{
-    margin-left: 10px;
-    font-size: 2rem;
-
-}
-
-ul {
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-li {
-  padding: 10px;
-  display: block;
-  transition: background-color 0.3s ease;
+.social-list {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--card-bg-color);
+    border-radius: var(--card-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-li:hover {
-  background-color: rgba(255, 255, 255, 0.063);
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+}
+
+td {
+    padding: 10px;
+    border: none;
+    vertical-align: top;
+}
+
+tr {
+    transition: background-color 0.3s ease;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.063);
 }
 
 a {
-color: var(--link-color);
-text-decoration: none;
+    color: var(--link-color);
+    text-decoration: none;
 }
 
 a:hover {
-text-decoration: underline;
-}
-
-.social-list {
-background-color: var(--card-bg-color);
-color: var(--text-color);
-padding: 20px;
-border-radius: 10px;
-width: 90%;  
-max-width: 600px;
-margin: 0 auto;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
 }
